@@ -64,9 +64,9 @@ In the full 6T cell, two NMOS access transistors (commonly labeled M3/M4) connec
 - **Device models:** 45nm Predictive Technology Models (PTM), Level 54 (BSIM4), for both NMOS and PMOS — see [`models/`](models)
 - **Supply voltage (VDD):** 1.0 V
 - **Analyses performed:**
-  - **DC sweep** of the cross-coupled inverter pair to extract the Voltage Transfer Characteristic (VTC) and construct the butterfly curve for Static Noise Margin (SNM) evaluation
-  - **Transient analysis** of a write operation: the cell is initialized to '0', the bitlines are driven to complementary values, and the wordline is pulsed to flip the stored state to '1'
-  - **Power analysis** by monitoring instantaneous power drawn from the VDD supply (`V(node) * I(Vsource)`) across the simulation window, capturing both static leakage and the dynamic switching transient
+  - **DC sweep** of the cross-coupled inverter pair to extract the Voltage Transfer Characteristic (VTC) and construct the butterfly curve for Static Noise Margin (SNM) evaluation.
+  - **Transient analysis** of a write operation: the cell is initialized to '0', the bitlines are driven to complementary values, and the wordline is pulsed to flip the stored state to '1'.
+  - **Power analysis** by monitoring instantaneous power drawn from the VDD supply (`V(node) * I(Vsource)`) across the simulation window, capturing both static leakage and the dynamic switching transient.
 
 ---
 
@@ -144,11 +144,11 @@ The NMOS and PMOS device models are 45nm-node **Predictive Technology Models (PT
 
 Potential directions for extending this baseline characterization:
 
-- Add the M3/M4 access transistors and full read/write testbench (bitlines + wordline driver) directly into the shared schematic
-- Sweep transistor sizing (W/L ratios) to study SNM vs. write-margin trade-offs
-- Characterize **read access time** and **read disturb margin**, in addition to write performance
-- Compare against alternative topologies (8T, 9T, sleep-transistor 6T) using the same PTM model set for a like-for-like comparison
-- Run Monte Carlo / process-variation analysis to assess robustness across mismatch and PVT corners
+- Add the M3/M4 access transistors and full read/write testbench (bitlines + wordline driver) directly into the shared schematic.
+- Sweep transistor sizing (W/L ratios) to study SNM vs. write-margin trade-offs.
+- Characterize **read access time** and **read disturb margin**, in addition to write performance.
+- Compare against alternative topologies (8T, 9T, sleep-transistor 6T) using the same PTM model set for a like-for-like comparison.
+- Run Monte Carlo / process-variation analysis to assess robustness across mismatch and PVT corners.
 
 ---
 
@@ -156,13 +156,17 @@ Potential directions for extending this baseline characterization:
 
 - W. Zhao and Y. Cao, "New generation of Predictive Technology Model for sub-45 nm early design exploration," *IEEE Transactions on Electron Devices*, vol. 53, no. 11, pp. 2816–2823, Nov. 2006.
 - E. Seevinck, F. J. List, and J. Lohstroh, "Static-noise margin analysis of MOS SRAM cells," *IEEE Journal of Solid-State Circuits*, vol. 22, no. 5, pp. 748–754, Oct. 1987.
-
+- N. Mahendran, M. Harshini, S. Arthi, K. Bhavadharani, and R. Booma, “Development of Low Power Energy Efficient 32nm SRAM Utilizing Sleep Transistor Technology,” in 2024 10th International Conference on Advanced Computing and Communication Systems (ICACCS), Coimbatore, India, 2024, pp. 1001-1006.
+- S. A. Tawfik and V. Kursun, “Low power and high speed SRAM design with dual dynamic node hybrid logic,” in 2010 International Conference on Computer Engineering & Systems, Cairo, Egypt, 2010, pp. 315-320.
+- B. S. R. Reddy, S. Chandrasekhar and M. Kamaraju, “Design of low power and high speed 6T SRAM cell using 45nm technology,” in 2012 International Conference on Computing, Electronics and Electrical Technologies (ICCEET), Kumaracoil, India, 2012, pp. 912-915.
+- P. K. Pal, B. K. Bhattacharyya and A. K. Dandapat, “Low power 6T SRAM cell design using 45nm technology,” in 2014 International Conference on Information Communication and Embedded Systems (ICICES), Chennai, India, 2014, pp. 1-5.
+  
 ---
 
 ## Author
 
 **Rachit Saini**
-Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology, Patiala.
+Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology.
 
 ---
 
