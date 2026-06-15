@@ -21,7 +21,6 @@ This repository contains the schematic, the device models, the simulation result
 - [Future Work](#future-work)
 - [References](#references)
 - [Author](#author)
-- [License](#license)
 
 ---
 
@@ -163,9 +162,3 @@ Potential directions for extending this baseline characterization:
 
 **Rachit Saini**
 Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology, Patiala.
-
----
-
-## License
-
-Feel free to add a license (e.g. MIT) appropriate for your intended use.
