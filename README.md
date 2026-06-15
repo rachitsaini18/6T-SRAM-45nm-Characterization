@@ -16,7 +16,6 @@ This repository contains the schematic, the device models, the simulation result
   - [Transient Write Response](#transient-write-response)
   - [Power Consumption](#power-consumption)
 - [Summary of Key Metrics](#summary-of-key-metrics)
-- [Repository Structure](#repository-structure)
 - [Running the Simulation](#running-the-simulation)
 - [Technology Models](#technology-models)
 - [Future Work](#future-work)
@@ -123,25 +122,6 @@ Two distinct regimes are visible:
 
 ---
 
-## Repository Structure
-
-```
-.
-├── README.md
-├── ltspice/
-│   └── SRAM_Test.asc        # LTspice schematic / testbench
-├── models/
-│   ├── 45nm_PTM.lib         # 45nm Predictive Technology Model (NMOS + PMOS), .lib for LTspice
-│   └── 45nm_model.txt        # Same model, plain-text copy
-└── figures/
-    ├── fig1_schematic.png
-    ├── fig2_butterfly_curve.png
-    ├── fig3_transient_response.png
-    └── fig4_power_profile.png
-```
-
----
-
 ## Running the Simulation
 
 1. Install [LTspice XVII](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html) (Windows or macOS).
@@ -182,8 +162,7 @@ Potential directions for extending this baseline characterization:
 ## Author
 
 **Rachit Saini**
-Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology, Patiala
-[ORCID](https://orcid.org/0009-0007-2861-1638)
+Department of Electrical & Instrumentation Engineering, Thapar Institute of Engineering & Technology, Patiala.
 
 ---
 
